@@ -156,7 +156,7 @@
  *
  *   Steppers: *_STEP_PIN, *_ENABLE_PIN, *_DIR_PIN, *_ENABLE_ON
  *   Endstops: *_STOP_PIN, USE_*MIN_PLUG, USE_*MAX_PLUG
- *       Axes: *_MIN_POS, *_MAX_POS, INVERT_*_DIR
+ *       Axes: *_MIN_POS, *_MAX_POS, __*_DIR
  *    Planner: DEFAULT_AXIS_STEPS_PER_UNIT, DEFAULT_MAX_FEEDRATE
  *             DEFAULT_MAX_ACCELERATION, AXIS_RELATIVE_MODES,
  *             MICROSTEP_MODES, MANUAL_FEEDRATE
@@ -1341,7 +1341,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
